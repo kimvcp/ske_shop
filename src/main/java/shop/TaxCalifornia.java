@@ -1,7 +1,7 @@
 package shop;
 
 /**
- * A class for calculating tax of California branch
+ * A class for calculating tax of California branch.
  */
 public class TaxCalifornia implements TaxCalculator {
     public double calculateTax(double purchase) {

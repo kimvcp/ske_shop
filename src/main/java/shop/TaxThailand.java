@@ -1,7 +1,7 @@
 package shop;
 
 /**
- * A class for calculating tax of Thailand branch
+ * A class for calculating tax of Thailand branch.
  */
 public class TaxThailand implements TaxCalculator {
     public double calculateTax(double purchase) {

@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 324369,
+  "duration": 108659,
   "status": "passed"
 });
 formatter.background({
@@ -41,7 +41,7 @@ formatter.match({
   "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 76419035,
+  "duration": 75054812,
   "status": "passed"
 });
 formatter.match({
@@ -58,7 +58,7 @@ formatter.match({
   "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 119197,
+  "duration": 114578,
   "status": "passed"
 });
 formatter.scenario({
@@ -93,7 +93,7 @@ formatter.match({
   "location": "StepDefShop.i_buy_with_quantity(String,int)"
 });
 formatter.result({
-  "duration": 374307,
+  "duration": 311095,
   "status": "passed"
 });
 formatter.match({
@@ -106,11 +106,11 @@ formatter.match({
   "location": "StepDefShop.total_should_be(double)"
 });
 formatter.result({
-  "duration": 65270584,
+  "duration": 66155193,
   "status": "passed"
 });
 formatter.before({
-  "duration": 51267,
+  "duration": 125243,
   "status": "passed"
 });
 formatter.background({
@@ -144,7 +144,7 @@ formatter.match({
   "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 398063,
+  "duration": 136711,
   "status": "passed"
 });
 formatter.match({
@@ -161,7 +161,7 @@ formatter.match({
   "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 129920,
+  "duration": 537636,
   "status": "passed"
 });
 formatter.scenario({
@@ -201,7 +201,7 @@ formatter.match({
   "location": "StepDefShop.i_buy_with_quantity(String,int)"
 });
 formatter.result({
-  "duration": 96433,
+  "duration": 359812,
   "status": "passed"
 });
 formatter.match({
@@ -218,7 +218,7 @@ formatter.match({
   "location": "StepDefShop.i_buy_with_quantity(String,int)"
 });
 formatter.result({
-  "duration": 163150,
+  "duration": 99653,
   "status": "passed"
 });
 formatter.match({
@@ -231,7 +231,7 @@ formatter.match({
   "location": "StepDefShop.total_should_be(double)"
 });
 formatter.result({
-  "duration": 413480,
+  "duration": 127230,
   "status": "passed"
 });
 });
