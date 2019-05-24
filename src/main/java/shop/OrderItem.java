@@ -1,5 +1,8 @@
 package shop;
 
+/**
+ * A class for calculating subtotal of products
+ */
 public class OrderItem {
     private int quantity;
     private Product prod;

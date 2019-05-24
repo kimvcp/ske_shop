@@ -2,12 +2,12 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 1,
   "name": "Buy products",
-  "description": "  As a customer\n  I want to buy products",
+  "description": "  As a Thai customer\n  I want to buy products",
   "id": "buy-products",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 102509,
+  "duration": 324369,
   "status": "passed"
 });
 formatter.background({
@@ -38,10 +38,10 @@ formatter.match({
       "offset": 27
     }
   ],
-  "location": "BuyStepdefs.a_product_with_price_exists(String,double)"
+  "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 75450816,
+  "duration": 76419035,
   "status": "passed"
 });
 formatter.match({
@@ -55,10 +55,10 @@ formatter.match({
       "offset": 25
     }
   ],
-  "location": "BuyStepdefs.a_product_with_price_exists(String,double)"
+  "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 107524,
+  "duration": 119197,
   "status": "passed"
 });
 formatter.scenario({
@@ -76,7 +76,7 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "total should be 41.00",
+  "name": "total should be 43.87",
   "keyword": "Then "
 });
 formatter.match({
@@ -90,27 +90,27 @@ formatter.match({
       "offset": 26
     }
   ],
-  "location": "BuyStepdefs.i_buy_with_quantity(String,int)"
+  "location": "StepDefShop.i_buy_with_quantity(String,int)"
 });
 formatter.result({
-  "duration": 244691,
+  "duration": 374307,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "41.00",
+      "val": "43.87",
       "offset": 16
     }
   ],
-  "location": "BuyStepdefs.total_should_be(double)"
+  "location": "StepDefShop.total_should_be(double)"
 });
 formatter.result({
-  "duration": 131784942,
+  "duration": 65270584,
   "status": "passed"
 });
 formatter.before({
-  "duration": 126928,
+  "duration": 51267,
   "status": "passed"
 });
 formatter.background({
@@ -141,10 +141,10 @@ formatter.match({
       "offset": 27
     }
   ],
-  "location": "BuyStepdefs.a_product_with_price_exists(String,double)"
+  "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 289058,
+  "duration": 398063,
   "status": "passed"
 });
 formatter.match({
@@ -158,10 +158,10 @@ formatter.match({
       "offset": 25
     }
   ],
-  "location": "BuyStepdefs.a_product_with_price_exists(String,double)"
+  "location": "StepDefShop.a_product_with_price_exists(String,double)"
 });
 formatter.result({
-  "duration": 157764,
+  "duration": 129920,
   "status": "passed"
 });
 formatter.scenario({
@@ -184,7 +184,7 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "total should be 121.00",
+  "name": "total should be 129.47",
   "keyword": "Then "
 });
 formatter.match({
@@ -198,10 +198,10 @@ formatter.match({
       "offset": 26
     }
   ],
-  "location": "BuyStepdefs.i_buy_with_quantity(String,int)"
+  "location": "StepDefShop.i_buy_with_quantity(String,int)"
 });
 formatter.result({
-  "duration": 700135,
+  "duration": 96433,
   "status": "passed"
 });
 formatter.match({
@@ -215,23 +215,23 @@ formatter.match({
       "offset": 24
     }
   ],
-  "location": "BuyStepdefs.i_buy_with_quantity(String,int)"
+  "location": "StepDefShop.i_buy_with_quantity(String,int)"
 });
 formatter.result({
-  "duration": 330935,
+  "duration": 163150,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "121.00",
+      "val": "129.47",
       "offset": 16
     }
   ],
-  "location": "BuyStepdefs.total_should_be(double)"
+  "location": "StepDefShop.total_should_be(double)"
 });
 formatter.result({
-  "duration": 222792,
+  "duration": 413480,
   "status": "passed"
 });
 });

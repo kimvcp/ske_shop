@@ -1,5 +1,8 @@
 package shop;
 
+/**
+ * A class for calculating tax of New York branch.
+ */
 public class TaxNewYork implements TaxCalculator {
     public double calculateTax(double purchase) {
         if (purchase > 100)

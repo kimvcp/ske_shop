@@ -1,5 +1,8 @@
 package shop;
 
+/**
+ * A class representing product object.
+ */
 public class Product {
     private int id;
     private double price;

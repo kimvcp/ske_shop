@@ -1,5 +1,8 @@
 package shop;
 
+/**
+ * A class for calculating tax of California branch
+ */
 public class TaxCalifornia implements TaxCalculator {
     public double calculateTax(double purchase) {
         double tax = 0.06;

@@ -3,6 +3,9 @@ package shop;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A class for calculating tax of ordered items
+ */
 public class Order {
     private int id;
     private List<OrderItem> items;
@@ -11,6 +14,7 @@ public class Order {
     public Order(int id) {
         this.id = id;
         this.items = new ArrayList<OrderItem>();
+        taxCalculator = new TaxThailand();
     }
 
     public Order() {

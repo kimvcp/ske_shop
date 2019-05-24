@@ -2,6 +2,9 @@ package shop;
 
 import java.util.*;
 
+/**
+ * A class for storing the products before they get ordered.
+ */
 public class ProductCatalog {
 
     private static ProductCatalog productCatalog;

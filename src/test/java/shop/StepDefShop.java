@@ -10,7 +10,7 @@ import shop.ProductCatalog;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BuyStepdefs {
+public class StepDefShop {
 
     private ProductCatalog catalog;
     private Order order;
@@ -34,6 +34,7 @@ public class BuyStepdefs {
 
     @Then("total should be (.+)")
     public void total_should_be(double total) {
+        System.out.println(order.getTotal());
         assertEquals(total, order.getTotal());
     }
 }
