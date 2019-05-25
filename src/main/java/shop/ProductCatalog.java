@@ -86,4 +86,12 @@ public class ProductCatalog {
             size++;
         }
     }
+    /**
+     * Get the size of catalog.
+     * @return catalog's size
+     */
+    public int getSize() {
+        return size;
+    }
+
 }

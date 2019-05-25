@@ -1,5 +1,5 @@
 Feature: Buy products
-    As a Thai customer
+    As a customer
     I want to buy products
 
 Background:
@@ -8,9 +8,9 @@ Background:
 
 Scenario: Buy one product
     When I buy Bread with quantity 2
-    Then total should be 43.87
+    Then total should be 41
 
 Scenario: Buy multiple products
     When I buy Bread with quantity 2
     And I buy Jam with quantity 1
-    Then total should be 129.47
+    Then total should be 121
