@@ -25,6 +25,7 @@ public class ProductCatalog implements ShopIterator {
 
     /**
      * Make sure that there will be only one instance.
+     *
      * @return instance
      */
     public static ProductCatalog getInstance() {
@@ -57,6 +58,7 @@ public class ProductCatalog implements ShopIterator {
 
     /**
      * Get the size of catalog.
+     *
      * @return catalog's size
      */
     public int getSize() {
@@ -66,6 +68,7 @@ public class ProductCatalog implements ShopIterator {
     /**
      * Just in case of emergency.
      * Set the size of catalog
+     *
      * @param size to be set
      */
     public void setSize(int size) {
@@ -84,6 +87,7 @@ public class ProductCatalog implements ShopIterator {
 
     /**
      * Creating iterator of map products.
+     *
      * @return iterator object
      */
     public Iterator createIterator() {

@@ -42,12 +42,10 @@ public class ShopView extends ShopController {
 
             if (choice.equals("c")) {
                 cancelOrderHandler();
-            }
-            else if (choice.equals("e")) {
+            } else if (choice.equals("e")) {
                 receiptHandler();
                 break;
-            }
-            else if (choice.charAt(0) > 48 && choice.charAt(0) < 57) {
+            } else if (choice.charAt(0) > 48 && choice.charAt(0) < 57) {
                 orderHandler(choice);
             } else {
                 System.out.println("Command not found");
@@ -58,7 +56,7 @@ public class ShopView extends ShopController {
     /**
      * Show the application interface in console.
      */
-    public void show(){
+    public void show() {
         displayCatalog();
         displayCommand();
     }

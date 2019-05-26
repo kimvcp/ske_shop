@@ -19,6 +19,7 @@ public class OrderItem {
         this.prod = prod;
         this.quantity = quantity;
     }
+
     /**
      * Calculating the subtotal of the items.
      */
@@ -28,6 +29,7 @@ public class OrderItem {
 
     /**
      * Get the ordered product
+     *
      * @return ordered product
      */
     public Product getProduct() {

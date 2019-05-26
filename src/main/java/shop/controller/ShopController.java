@@ -1,6 +1,7 @@
 package shop.controller;
 
 import shop.model.*;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
@@ -27,6 +28,7 @@ public class ShopController {
         catalog = ProductCatalog.getInstance();
 
     }
+
     /**
      * Initializing the catalog for all handlers.
      */
@@ -40,6 +42,7 @@ public class ShopController {
 
     /**
      * Handler for ordering.
+     *
      * @param choice of product
      */
     public void orderHandler(String choice) {
@@ -66,7 +69,7 @@ public class ShopController {
         System.out.print("Enter cancel number: ");
         int cancelNum = console.nextInt();
         ((Order) order).remove(cancelNum - 1);
-        System.out.println("\nOrder item canceled: " +products.get(cancelNum - 1).getName());
+        System.out.println("\nOrder item canceled: " + products.get(cancelNum - 1).getName());
     }
 
     /**
@@ -93,7 +96,6 @@ public class ShopController {
 
     /**
      * Print products by iterating through Map.
-     *
      */
     public void printProducts() {
         Iterator products = catalog.createIterator();
@@ -106,7 +108,6 @@ public class ShopController {
 
     /**
      * Print ordered item by iterating through list.
-     *
      */
     public void printOrderedItem() {
         Iterator orderedItems = order.createIterator();

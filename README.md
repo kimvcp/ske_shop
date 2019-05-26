@@ -1,6 +1,6 @@
 # SKE Shop
 
-SKE shop is an ordering system for a product shop which user can order the product and checkout to see the receipt.
+An ordering system for a product shop which user can order the product and checkout to see the receipt.
 Moreover, it provides a tax calculator which calculate differently depending on the location of the shop.
 
 ## How to use
@@ -38,7 +38,7 @@ As a user, you are the customer of the SKE shop.
     Tax calculator can have many strategies for calculating tax.
 
 #### Iterator design pattern
-    The application requires to maintain different type of collections.
+    The application requires to maintain a different type of collections.
 
 
 ## Model-View-Controller
@@ -58,6 +58,12 @@ As a user, you are the customer of the SKE shop.
     ShopController is responsible for handling the user input and performing interactions on the data model objects.
     
 ## UML Diagram
+
+
+## Developer
+
+    Vichaphol Thamsuthikul 6010545897
+
 
 
 
