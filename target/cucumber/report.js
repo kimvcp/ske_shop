@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 103781,
+  "duration": 89736,
   "status": "passed"
 });
 formatter.background({
@@ -36,7 +36,7 @@ formatter.match({
   "location": "StepDefShop.a_product_exists(int,int)"
 });
 formatter.result({
-  "duration": 77698804,
+  "duration": 79312800,
   "status": "passed"
 });
 formatter.scenario({
@@ -67,7 +67,7 @@ formatter.match({
   "location": "StepDefShop.i_cancel_order(int)"
 });
 formatter.result({
-  "duration": 126064,
+  "duration": 241556,
   "status": "passed"
 });
 formatter.match({
@@ -80,11 +80,11 @@ formatter.match({
   "location": "StepDefShop.total_order_should_be(int)"
 });
 formatter.result({
-  "duration": 68829254,
+  "duration": 64882780,
   "status": "passed"
 });
 formatter.before({
-  "duration": 63044,
+  "duration": 31219,
   "status": "passed"
 });
 formatter.background({
@@ -113,7 +113,7 @@ formatter.match({
   "location": "StepDefShop.a_product_exists(int,int)"
 });
 formatter.result({
-  "duration": 173429,
+  "duration": 122094,
   "status": "passed"
 });
 formatter.scenario({
@@ -138,7 +138,7 @@ formatter.match({
   "location": "StepDefShop.i_cancel_all_order()"
 });
 formatter.result({
-  "duration": 29254,
+  "duration": 35676,
   "status": "passed"
 });
 formatter.match({
@@ -151,7 +151,7 @@ formatter.match({
   "location": "StepDefShop.total_order_should_be(int)"
 });
 formatter.result({
-  "duration": 62692,
+  "duration": 73878,
   "status": "passed"
 });
 });

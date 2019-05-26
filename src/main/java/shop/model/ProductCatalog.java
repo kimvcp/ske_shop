@@ -64,6 +64,15 @@ public class ProductCatalog implements ShopIterator {
     }
 
     /**
+     * Just in case of emergency.
+     * Set the size of catalog
+     * @param size to be set
+     */
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    /**
      * Get all of the products in catalog.
      *
      * @return all products

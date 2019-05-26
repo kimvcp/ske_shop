@@ -1,4 +1,4 @@
-Feature: Buy products
+Feature: Add products
     As a shop owner
     I want to add products to catalog
 
@@ -12,4 +12,4 @@ Scenario: Add one product
 Scenario: Add multiple products
     When I add Bread with size 2
     And I add Jam with size 1
-    Then total catalog size should be 3
+    Then total catalog size should be 13

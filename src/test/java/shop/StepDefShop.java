@@ -7,7 +7,9 @@ import cucumber.api.java.en.When;
 import shop.model.Order;
 import shop.model.Product;
 import shop.model.ProductCatalog;
+import shop.model.TaxThailand;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -21,12 +23,14 @@ public class StepDefShop {
     @Before
     public void setup() {
         catalog = ProductCatalog.getInstance();
-        products = catalog.getAll();
+        products = new ArrayList<>();
         order = new Order();
     }
 
+    // Buy feature
     @Given("a product (.+) with price (.+) exists")
     public void a_product_with_price_exists(String name, double price) {
+        order.setTaxCalculator(new TaxThailand());
         catalog.addProduct(name, price);
     }
 
@@ -41,16 +45,15 @@ public class StepDefShop {
         assertEquals(total, order.getTotal());
     }
 
+    // Add feature
     @Given("a catalog with (.+) size exists")
     public void a_catalog_with_size_exists(int number) {
-        for (int i = 0; i < number; i++) {
-            catalog.addProduct("testing product", i);
-        }
+        catalog.setSize(number);
     }
 
     @When("I add (.+) with size (.+)")
-    public void i_add_with_quantity(String name, int quant) {
-        for (int i = 0; i < quant; i++) {
+    public void i_add_product_with_quantity(String name, int quantity) {
+        for (int i = 0; i < quantity; i++) {
             catalog.addProduct(name, i);
         }
     }
@@ -60,7 +63,7 @@ public class StepDefShop {
         assertEquals(total, catalog.getSize());
     }
 
-
+    // Cancel feature
     @Given("a order (.+) with (.+) quantity exists")
     public void a_product_exists(int orderNumber, int quantity) {
         for (int i = 0; i < quantity; i++) {
