@@ -12,7 +12,6 @@ public class Main {
         ShopView shopView = new ShopView();
         Order strategy = new Order();
         strategy.setTaxCalculator(new TaxThailand());
-        shopView.printCatalog();
-        shopView.printCommnand();
+        shopView.show();
     }
 }

@@ -5,7 +5,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import shop.model.Order;
-import shop.model.OrderItem;
 import shop.model.Product;
 import shop.model.ProductCatalog;
 
@@ -61,20 +60,25 @@ public class StepDefShop {
         assertEquals(total, catalog.getSize());
     }
 
-    @Given("a order (.+) with quantity (.+) exists")
-    public void a_product_with_quantity_exists(String name,int quantity) {
-        catalog.addProduct(name, quantity);
-        Product prod = catalog.getProduct(name);
-        order.addItem(prod, quantity);
+
+    @Given("a order (.+) with (.+) quantity exists")
+    public void a_product_exists(int orderNumber, int quantity) {
+        for (int i = 0; i < quantity; i++) {
+            catalog.addProduct("testing product", i);
+        }
+        products = catalog.getAll();
+        order.addItem(products.get(orderNumber - 1), quantity);
     }
 
-    @When("I cancel (.*)")
-    public void i_cancel(String name) {
-        Product prod = catalog.getProduct(name);
-        OrderItem item = new OrderItem(prod,1);
-        order.remove(item);
-        }
+    @When("I cancel order (.*)")
+    public void i_cancel_order(int orderNumber) {
+        order.remove(orderNumber - 1);
+    }
 
+    @When("I cancel all orders")
+    public void i_cancel_all_order() {
+        order.removeAll();
+    }
 
     @Then("total order should be (.+)")
     public void total_order_should_be(int total) {

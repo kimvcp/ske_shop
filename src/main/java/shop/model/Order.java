@@ -55,14 +55,6 @@ public class Order implements ShopIterator {
      *
      * @param
      */
-    public void remove(OrderItem item) {
-        items.remove(item);
-    }
-    /**
-     * Remove a item from the ordered items.
-     *
-     * @param
-     */
     public void remove(int selectedIndex) {
         items.remove(selectedIndex);
     }

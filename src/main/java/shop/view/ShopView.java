@@ -1,10 +1,11 @@
 package shop.view;
 
 import shop.controller.ShopController;
+
 import java.util.Scanner;
 
 /**
- * A class representing of shop's information, such as catalog, command, receipt.
+ * A class representing view of shop in the console.
  */
 public class ShopView extends ShopController {
     /**
@@ -17,9 +18,22 @@ public class ShopView extends ShopController {
     }
 
     /**
-     * Handler for printing command.
+     * Displaying the product catalog.
      */
-    public void printCommnand() {
+    public void displayCatalog() {
+        initCatalog();
+        System.out.println("__________ WELCOME TO THE SKE SHOP __________\n");
+        System.out.printf("  %s%36s\n", "Product", "Price");
+        printProducts();
+        System.out.println();
+        System.out.println(" [c] Cancel order");
+        System.out.println(" [e] Review order and checkout");
+    }
+
+    /**
+     * Displaying the command which require a handler for each command.
+     */
+    public void displayCommand() {
 
         while (true) {
             System.out.println();
@@ -27,10 +41,10 @@ public class ShopView extends ShopController {
             String choice = console.next();
 
             if (choice.equals("c")) {
-                cancelOrder();
+                cancelOrderHandler();
             }
             else if (choice.equals("e")) {
-                printReceipt();
+                receiptHandler();
                 break;
             }
             else if (choice.charAt(0) > 48 && choice.charAt(0) < 57) {
@@ -39,5 +53,10 @@ public class ShopView extends ShopController {
                 System.out.println("Command not found");
             }
         }
+    }
+
+    public void show(){
+        displayCatalog();
+        displayCommand();
     }
 }

@@ -3,14 +3,12 @@ Feature: Buy products
     I want to cancel product(s)
 
 Background:
-    Given a order Bread with quantity 1 exists
-    And a order Jam with quantity 1 exists
+    Given a order 1 with 1 quantity exists
 
 Scenario: Cancel one order
-    When I cancel Bread
-    Then total order should be 1
+    When I cancel order 1
+    Then total order should be 0
 
-Scenario: Cancel multiple orders
-    When I cancel Bread
-    And I cancel Jam
+Scenario: Cancel all order
+    When I cancel all orders
     Then total order should be 0
