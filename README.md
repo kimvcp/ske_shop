@@ -43,7 +43,6 @@ As a user, you are the customer of the SKE shop.
     The application requires to maintain a different type of collections.
 ![](uml_images/iterator_uml.png)
 
-
 ## Model-View-Controller
 
 #### Model
@@ -59,10 +58,10 @@ As a user, you are the customer of the SKE shop.
 #### Controller
 
     ShopController is responsible for handling the user input and performing interactions on the data model objects.
-
-## UML Diagram
-![](uml_images/uml.png)
     
+## UML Diagram
+![](uml_images/uml.png)    
+
 ## Developer
 
    Vichaphol Thamsuthikul #6010545897

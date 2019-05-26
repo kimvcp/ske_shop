@@ -1,13 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/add.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/cancel.feature");
 formatter.feature({
   "line": 1,
-  "name": "Add products",
-  "description": "  As a shop owner\n  I want to add product(s) to catalog",
-  "id": "add-products",
+  "name": "Buy products",
+  "description": "  As a customer\n  I want to cancel product(s) that is ordered",
+  "id": "buy-products",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 97625,
+  "duration": 110962,
   "status": "passed"
 });
 formatter.background({
@@ -19,72 +19,72 @@ formatter.background({
 });
 formatter.step({
   "line": 6,
-  "name": "a catalog with 10 size exists",
+  "name": "an order number 1 with 1 quantity exists",
   "keyword": "Given "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "10",
-      "offset": 15
+      "val": "1",
+      "offset": 16
+    },
+    {
+      "val": "1",
+      "offset": 23
     }
   ],
-  "location": "StepDefShop.a_catalog_with_size_exists(int)"
+  "location": "StepDefShop.a_order_number_with_quantity_exists(int,int)"
 });
 formatter.result({
-  "duration": 65777702,
+  "duration": 134075250,
   "status": "passed"
 });
 formatter.scenario({
   "line": 8,
-  "name": "Add one product",
+  "name": "Cancel one order",
   "description": "",
-  "id": "add-products;add-one-product",
+  "id": "buy-products;cancel-one-order",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 9,
-  "name": "I add Bread with size 2",
+  "name": "I cancel order 1",
   "keyword": "When "
 });
 formatter.step({
   "line": 10,
-  "name": "total catalog size should be 12",
+  "name": "total orders should be 0",
   "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bread",
-      "offset": 6
-    },
-    {
-      "val": "2",
-      "offset": 22
+      "val": "1",
+      "offset": 15
     }
   ],
-  "location": "StepDefShop.i_add_product_with_quantity(String,int)"
+  "location": "StepDefShop.i_cancel_order(int)"
 });
 formatter.result({
-  "duration": 2767928,
+  "duration": 175425,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "12",
-      "offset": 29
+      "val": "0",
+      "offset": 23
     }
   ],
-  "location": "StepDefShop.total_catalog_size_should_be(int)"
+  "location": "StepDefShop.total_orders_should_be(int)"
 });
 formatter.result({
-  "duration": 74850317,
+  "duration": 5772760,
   "status": "passed"
 });
 formatter.before({
-  "duration": 54892,
+  "duration": 114323,
   "status": "passed"
 });
 formatter.background({
@@ -96,90 +96,62 @@ formatter.background({
 });
 formatter.step({
   "line": 6,
-  "name": "a catalog with 10 size exists",
+  "name": "an order number 1 with 1 quantity exists",
   "keyword": "Given "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "10",
-      "offset": 15
+      "val": "1",
+      "offset": 16
+    },
+    {
+      "val": "1",
+      "offset": 23
     }
   ],
-  "location": "StepDefShop.a_catalog_with_size_exists(int)"
+  "location": "StepDefShop.a_order_number_with_quantity_exists(int,int)"
 });
 formatter.result({
-  "duration": 319879,
+  "duration": 135502,
   "status": "passed"
 });
 formatter.scenario({
   "line": 12,
-  "name": "Add multiple products",
+  "name": "Cancel all order",
   "description": "",
-  "id": "add-products;add-multiple-products",
+  "id": "buy-products;cancel-all-order",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 13,
-  "name": "I add Bread with size 2",
+  "name": "I cancel all orders",
   "keyword": "When "
 });
 formatter.step({
   "line": 14,
-  "name": "I add Jam with size 1",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "total catalog size should be 13",
+  "name": "total orders should be 0",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Bread",
-      "offset": 6
-    },
-    {
-      "val": "2",
-      "offset": 22
-    }
-  ],
-  "location": "StepDefShop.i_add_product_with_quantity(String,int)"
+  "location": "StepDefShop.i_cancel_all_order()"
 });
 formatter.result({
-  "duration": 103785,
+  "duration": 39199,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Jam",
-      "offset": 6
-    },
-    {
-      "val": "1",
-      "offset": 20
+      "val": "0",
+      "offset": 23
     }
   ],
-  "location": "StepDefShop.i_add_product_with_quantity(String,int)"
+  "location": "StepDefShop.total_orders_should_be(int)"
 });
 formatter.result({
-  "duration": 70212,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "13",
-      "offset": 29
-    }
-  ],
-  "location": "StepDefShop.total_catalog_size_should_be(int)"
-});
-formatter.result({
-  "duration": 84100,
+  "duration": 76973,
   "status": "passed"
 });
 });
