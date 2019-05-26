@@ -1,37 +1,62 @@
 # SKE Shop
 
-SKE shop is a ordering system for a product shop which user can order the product and checkout to see the receipt.
-Moreover, it provide a tax calculator which calculate differently depending on the location of shop.
+SKE shop is an ordering system for a product shop which user can order the product and checkout to see the receipt.
+Moreover, it provides a tax calculator which calculate differently depending on the location of the shop.
+
+## How to use
+As a user, you are the customer of the SKE shop.
+
+**User interface**
+
+    __________ WELCOME TO THE SKE SHOP __________
+
+    Product                               Price
+    [1] Pizza                             250.00
+    [2] Ham                                40.00
+    [3] Steak                             200.00
+    [4] Bread                              20.00
+
+    [c] Cancel order
+    [e] Review order and checkout
+
+
+**Functionality**
+
+
+    User can input:
+    
+        [number] to place an order.
+        [c] to cancel order.
+        [e] to review order and checkout.
 
 ## Design Pattern
 
 #### Singleton design pattern
-The application can only contain one product catalog for ordering.
+    The application can only contain one product catalog for ordering.
    
 #### Strategy design pattern
-Tax calculator can have many strategies for calculating tax.
+    Tax calculator can have many strategies for calculating tax.
 
 #### Iterator design pattern
-The application requires to maintain different type of collections.
+    The application requires to maintain different type of collections.
+
 
 ## Model-View-Controller
-An architectural pattern commonly used for developing user interfaces that divides an application into three interconnected parts
 
 #### Model
-Responsible for managing the data of the application
 
-Product Catalog stores product object.
-OrderItem is a product with quantity.
-Order store a OrderItem.
+    ProductCatalog manages the Product object.
+    OrderItem is a Product with quantity.
+    Order manages the OrderItem.
 
 #### View
-Presentation of the model in a particular format.
-
-
+    
+    ShopView is responsible for displaying a model object in console format.
 
 #### Controller
-Responds to the user input and performs interactions on the data model objects.
 
+    ShopController is responsible for handling the user input and performing interactions on the data model objects.
+    
 ## UML Diagram
 
 
