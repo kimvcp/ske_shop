@@ -6,5 +6,10 @@ Background:
     Given a catalog with 10 size exists
 
 Scenario: Add one product
-    When I add product with quantity 2
-    Then total size should be 12
+    When I add Bread with size 2
+    Then total catalog size should be 12
+
+Scenario: Add multiple products
+    When I add Bread with size 2
+    And I add Jam with size 1
+    Then total catalog size should be 3

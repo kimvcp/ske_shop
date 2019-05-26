@@ -1,4 +1,4 @@
-package shop;
+package shop.model;
 
 import java.util.*;
 
@@ -6,8 +6,7 @@ import java.util.*;
  * A class for storing the products before they get ordered.
  * (Implementing singleton design pattern in this class).
  */
-public class ProductCatalog {
-
+public class ProductCatalog implements ShopIterator {
     /**
      * A instance of the class
      */
@@ -47,15 +46,6 @@ public class ProductCatalog {
     }
 
     /**
-     * Get the product catalog's item
-     *
-     * @return product catalog
-     */
-    public static Map<String,Product> getProductCatalog(){
-        return products;
-    }
-
-    /**
      * Get the product by name.
      *
      * @param name of choosen product
@@ -63,6 +53,14 @@ public class ProductCatalog {
      */
     public Product getProduct(String name) {
         return products.get(name);
+    }
+
+    /**
+     * Get the size of catalog.
+     * @return catalog's size
+     */
+    public int getSize() {
+        return size;
     }
 
     /**
@@ -76,22 +74,10 @@ public class ProductCatalog {
     }
 
     /**
-     * Add the all of the products to cataolog.
-     *
-     * @param all of the product in list
+     * Creating iterator of map products.
+     * @return iterator object
      */
-    public void addAllProduct(List<Product> all) {
-        for (Product product : all) {
-            products.put(product.getName(), product);
-            size++;
-        }
+    public Iterator createIterator() {
+        return products.values().iterator();
     }
-    /**
-     * Get the size of catalog.
-     * @return catalog's size
-     */
-    public int getSize() {
-        return size;
-    }
-
 }

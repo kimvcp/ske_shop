@@ -1,4 +1,4 @@
-package shop;
+package shop.model;
 
 /**
  * A class for calculating subtotal of products
@@ -16,7 +16,6 @@ public class OrderItem {
     public OrderItem(Product prod, int quantity) {
         if (quantity <= 0)
             throw new IllegalArgumentException("OrderItem quantity must be positive");
-
         this.prod = prod;
         this.quantity = quantity;
     }
@@ -27,4 +26,11 @@ public class OrderItem {
         return prod.getPrice() * quantity;
     }
 
+    /**
+     * Get the ordered product
+     * @return ordered product
+     */
+    public Product getProduct() {
+        return prod;
+    }
 }

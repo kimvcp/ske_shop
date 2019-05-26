@@ -1,4 +1,6 @@
-package shop;
+package shop.model;
+
+import shop.model.TaxCalculator;
 
 /**
  * A class for calculating tax of California branch.
