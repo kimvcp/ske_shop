@@ -1,6 +1,6 @@
 Feature: Add products
     As a shop owner
-    I want to add products to catalog
+    I want to add product(s) to catalog
 
 Background:
     Given a catalog with 10 size exists

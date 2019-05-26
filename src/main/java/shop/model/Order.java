@@ -19,7 +19,7 @@ public class Order implements ShopIterator {
     private TaxCalculator taxCalculator;
 
     public Order() {
-        this.items = new ArrayList<OrderItem>();
+        this.items = new ArrayList<>();
     }
 
     /**

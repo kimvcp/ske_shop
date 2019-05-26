@@ -1,6 +1,6 @@
 Feature: Buy products
     As a customer
-    I want to buy products from Thai shop
+    I want to buy product(s) from Thai shop
 
 Background:
     Given a product Bread with price 20.50 exists

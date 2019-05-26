@@ -55,6 +55,9 @@ public class ShopView extends ShopController {
         }
     }
 
+    /**
+     * Show the application interface in console.
+     */
     public void show(){
         displayCatalog();
         displayCommand();

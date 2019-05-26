@@ -8,12 +8,14 @@ import shop.model.Order;
 import shop.model.Product;
 import shop.model.ProductCatalog;
 import shop.model.TaxThailand;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * A class for implementing behavioral-driven development.
+ */
 public class StepDefShop {
 
     private ProductCatalog catalog;
@@ -64,8 +66,8 @@ public class StepDefShop {
     }
 
     // Cancel feature
-    @Given("a order (.+) with (.+) quantity exists")
-    public void a_product_exists(int orderNumber, int quantity) {
+    @Given("an order number (.+) with (.+) quantity exists")
+    public void a_order_number_with_quantity_exists(int orderNumber, int quantity) {
         for (int i = 0; i < quantity; i++) {
             catalog.addProduct("testing product", i);
         }
@@ -83,8 +85,8 @@ public class StepDefShop {
         order.removeAll();
     }
 
-    @Then("total order should be (.+)")
-    public void total_order_should_be(int total) {
+    @Then("total orders should be (.+)")
+    public void total_orders_should_be(int total) {
         assertEquals(total, order.getItems().size());
     }
 
