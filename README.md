@@ -33,12 +33,15 @@ As a user, you are the customer of the SKE shop.
 
 #### Singleton design pattern
     The application can only contain one product catalog for ordering.
+![](uml_images/singleton_uml.png)
    
 #### Strategy design pattern
     Tax calculator can have many strategies for calculating tax.
+![](uml_images/strategy_uml.png)
 
 #### Iterator design pattern
     The application requires to maintain a different type of collections.
+![](uml_images/iterator_uml.png)
 
 
 ## Model-View-Controller
@@ -56,13 +59,13 @@ As a user, you are the customer of the SKE shop.
 #### Controller
 
     ShopController is responsible for handling the user input and performing interactions on the data model objects.
-    
+
 ## UML Diagram
-
-
+![](uml_images/uml.png)
+    
 ## Developer
 
-    Vichaphol Thamsuthikul 6010545897
+   Vichaphol Thamsuthikul #6010545897
 
 
 

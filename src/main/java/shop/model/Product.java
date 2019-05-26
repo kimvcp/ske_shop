@@ -53,33 +53,4 @@ public class Product {
         return price;
     }
 
-    /**
-     * Set id of the given product.
-     *
-     * @param id to be set
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    /**
-     * Set name of the given product.
-     *
-     * @param name to be set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * Set price of the given product.
-     *
-     * @param price to be set
-     */
-    public void setPrice(double price) {
-        if (price < 0)
-            throw new IllegalArgumentException("Price must be positive value");
-        this.price = price;
-    }
-
 }

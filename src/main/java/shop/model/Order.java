@@ -37,7 +37,7 @@ public class Order implements ShopIterator {
      * @param product
      * @param quantity
      */
-    public void addItem(Product product, int quantity) {
+    public void addItem(Product product, int quantity)  {
         items.add(new OrderItem(product, quantity));
     }
 
